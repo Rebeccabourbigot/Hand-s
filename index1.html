@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main1.css">
+
+  <body>
+
+    <div class="header"></div>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Nom d'un jeu ..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button">Rechercher !</button>
+    </div></div>
+    <div class="content">
+
+      <h1>Catégorie</h1>
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary option0 active">
+          <input type="radio" name="options" id="option0" autocomplete="off" checked>
+          <img src="images/picto/tout.png" alt="">
+          <h4>Tout</h4>
+        </label>
+        <label class="btn btn-secondary option1">
+          <input type="radio" name="options" id="option1" autocomplete="off">
+          <img src="images/picto/logique-2.png" alt="">
+          <h4>Jeu de logique</h4>
+        </label>
+        <label class="btn btn-secondary option2">
+          <input type="radio" name="options" id="option2" autocomplete="off">
+          <img src="images/picto/adeux-2.png" alt="">
+          <h4>Jeu à deux</h4>
+        </label>
+        <label class="btn btn-secondary option3">
+          <input type="radio" name="options" id="option3" autocomplete="off">
+          <img src="images/picto/groupe-2.png" alt="">
+          <h4>Jeu en groupe</h4>
+        </label>
+        <label class="btn btn-secondary option4">
+          <input type="radio" name="options" id="option4" autocomplete="off">
+          <img src="images/picto/vitesse-2.png" alt="">
+          <h4>Jeu de vitesse</h4>
+        </label>
+        <label class="btn btn-secondary option5">
+          <input type="radio" name="options" id="option5" autocomplete="off">
+          <img src="images/picto/aleatoire-2.png" alt="">
+          <h4>Jeu aléatoire</h4>
+        </label>
+      </div>
+
+      <h1 class="h1plus">Galerie de jeux</h1>
+
+      <div class="galerie filter-button-group">
+
+
+        <div class="preview two logic">
+          <button id="boutons" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modalspock">
+            <img src="images/spock/game.png" alt="image" class="img-preview">
+          </button>
+            <h2>SPOCK</h2>
+        </div>
+
+
+        <div class="preview group speed">
+          <button id="boutons" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modalsquiz">
+            <img src="images/squizz/game.png" alt="image" class="img-preview">
+          </button>
+            <h2>SQUIZZ</h2>
+          </div>
+
+          <div class="preview group logic">
+            <button id="boutons" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modalsumb">
+              <img src="images/sumb/game.png" alt="image" class="img-preview">
+            </button>
+            <h2>SUMB</h2>
+          </div>
+
+          <div class="preview two">
+            <div id="preview-link"><img src="images/1.jpg" alt="image" class="img-preview">
+              <h2>JEU À VENIR</h2></div>
+          </div>
+
+          <div class="preview group">
+            <div href="" id="preview-link"><img src="images/2.jpg" alt="image" class="img-preview">
+            <h2>JEU À VENIR</h2></div>
+          </div>
+
+          <div class="preview speed">
+            <div href="" id="preview-link"><img src="images/3.jpg" alt="image" class="img-preview">
+            <h2>JEU À VENIR</h2></div>
+          </div>
+
+
+                  <!-- Modal -->
+                  <div id="modalspock" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <div class="picto-pop">
+                            <img src="images/picto/logique-1.png" alt="">
+                            <img src="images/picto/adeux-1.png" alt="">
+                          </div>
+
+                          <h3 class="modal-title">SPOCK</h3>
+                        </div>
+                        <div class="modal-body modal-spock">
+                          <p id="spock-p00">Les règles classiques du Pierre Feuille Ciseaux<br>s’appliquent toujours dans cette évolution, néanmoins <br>il faut ajouter deux symboles : <span>Spock</span> et le <span>Lézard</span></p>
+                          <h5 id="spock-h501">LES REGLES :</h5>
+                          <p id="spock-p01">• Les ciseaux <span>coupent</span> le papier</p>
+                          <p id="spock-p02">• Le papier <span>couvre</span> la pierre</p>
+                          <p id="spock-p03">• La pierre <span>écrase</span> le lézard</p>
+                          <p id="spock-p04">• Le lézard <span>empoisonne</span> Spock</p>
+                          <p id="spock-p05">• Spock <span>écrabouille</span> les ciseaux</p>
+                          <p id="spock-p06">• Les ciseaux <span>décapitent</span> le lézard</p>
+                          <p id="spock-p07">• Le lézard <span>mange</span> le papier</p>
+                          <p id="spock-p08">• Le papier <span>réfute</span> Spock</p>
+                          <p id="spock-p09">• Spock <span>vaporise</span> la pierre</p>
+                          <p id="spock-p10">• La pierre <span>détruit</span> les ciseaux</p>
+                          <p id="spock-p11">Les deux (ou plus) joueurs choisissent <br>simultanément un des 5 coups possibles <br>en le symbolisant de la main :</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Modal -->
+                  <div id="modalsquiz" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h3 class="modal-title">SQUIZZ</h3>
+                          <div class="picto-pop">
+                            <img src="images/picto/vitesse-1.png" alt="">
+                            <img src="images/picto/groupe-1.png" alt="">
+                          </div>
+                        </div>
+                        <div class="modal-body modal-squizz">
+                          <h5 id="squizz-h501">Dans ce jeu il y a 4 signes à retenir : </h5>
+                          <h5 id="squizz-h502">Chaque signe étant accompagné d'un mouvement :</h5>
+                          <p id="squizz-p01">Un signe d'une main <br>vers la gauche ou la droite.</p>
+                          <p id="squizz-p02">On pointe d'une main une personne </p>
+                          <p id="squizz-p03">On pointe des <br>deux mains quelqu'un. </p>
+                          <p id="squizz-p04">On lève le bras <br>pour changer le sens du jeu. </p>
+                          <h5 id="squizz-h503">Pour commencer un tour, <br>un des joueur débute par : </h5>
+                          <p id="squizz-p05">Quand quelqu'un se fait <br>il doit dire le nom d'un animal le plus vite possible <br>(toute race confondue sauf fictive), par exemple "chat". </p>
+                          <p id="squizz-p06">passe le tour à la personne pointée.</p>
+                          <p id="squizz-p07">change le sens, si </p>
+                          <p id="squizz-p08"> le vient de la droite,</p>
+                          <p id="squizz-p09">on lève le bras gauche <br>et c'est à nouveau à celui qui vient de dire <br> Vice versa si le squizz vient de la gauche.</p>
+                          <p id="squizz-p10">  de parler.</p>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Modal -->
+                  <div id="modalsumb" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                          <h3 class="modal-title">SUMB</h3>
+                          <div class="picto-pop">
+                            <img src="images/picto/logique-1.png" alt="">
+                            <img src="images/picto/groupe-1.png" alt="">
+                          </div>
+                        </div>
+                        <div class="modal-body modal-sumb">
+                          <h5 id="sumb-h501">Au départ :</h5>
+                          <p id="sumb-p01">Les deux partenaires se tiennent face à face,<br>les poings fermés en avant. </p>
+                          <p id="sumb-p02">À un signal donné, chaque joueur doit, en même <br>temps que son adversaire, lever spontanément <br>autant de pouces qu’il le désire, tout en énonçant <br>un nombre de 1 à 4.</p>
+                          <p id="sumb-p03">Celui qui énoncera un nombre égal au total des <br>pouces montrés par l’un et par l’autre des deux <br>joueurs marquera un point.</p>
+                          <p id="sumb-p04">Un joueur n’ayant plus de pouce gagne et se retire, <br>alors que le dernier joueur avec un (ou deux) pouces <br>restants perd le jeu. </p>
+                          <p id="sumb-p05">Tu peux également jouer au Sumb <br>à plusieurs, il suffit juste de compter <br>le nombre de pouces global. <br>(si vous êtes 4 joueurs <br>- 4x2 = 8 pouces - il faudra énoncer <br>un nombre entre 0 et 8 pour le <br>premier joueur).</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="footer">
+                <div class="copyright">© 2018 HAND'S Tous droits réservés.</div>
+                <div class="network">
+                  <img src="images/footer/instagram.png" alt="">
+                  <img src="images/footer/facebook.png" alt="">
+                  <img src="images/footer/mail.png" alt="">
+                </div>
+              </div>
+
+              <!-- Optional JavaScript -->
+              <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+              <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+              <script>
+
+              $(".option0").click(function(){
+                console.log("test 1");
+                $(".logic").removeClass("unset");
+                $(".speed").removeClass("unset");
+                $(".group").removeClass("unset");
+                $(".two").removeClass("unset");
+              });
+
+              $(".option1").click(function(){
+                console.log("test 2");
+                $(".speed").addClass("unset");
+                $(".group").addClass("unset");
+                $(".two").addClass("unset");
+                $(".logic").removeClass("unset");
+              });
+
+              $(".option2").click(function(){
+                console.log("test 3");
+                $(".speed").addClass("unset");
+                $(".group").addClass("unset");
+                $(".logic").addClass("unset");
+                $(".two").removeClass("unset");
+              });
+
+              $(".option3").click(function(){
+                console.log("test 4");
+                $(".speed").addClass("unset");
+                $(".two").addClass("unset");
+                $(".logic").addClass("unset");
+                $(".group").removeClass("unset");
+              });
+
+              $(".option4").click(function(){
+                console.log("test 5");
+                $(".two").addClass("unset");
+                $(".group").addClass("unset");
+                $(".logic").addClass("unset");
+                $(".speed").removeClass("unset");
+              });
+
+              $(".option5").click(function(){
+                console.log("test 6");
+                $(".logic").toggleClass("unset");
+              });
+
+              var $k = $("p");
+              var marge = function(a){ a = a*1.2; }
+              var $taillereel =  $("p").css("top");
+              console.log("")
+              var iWindowsSize = $(window).width();
+              if (iWindowsSize  < 1050 && iWindowsSize >=550){
+                var $taillereel =  $("p").css("top");
+                $k.css(marge($taillereel))
+              };
+
+              </script>
+
+            </body>
+            </html>
