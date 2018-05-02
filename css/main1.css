@@ -218,7 +218,7 @@ a:hover > h2 {
 .modal-dialog {
   margin: auto;
   margin-top: 40px;
-  max-width: 75vw
+  max-width: 960px;
 }
 
 @media (max-width:1050px){
